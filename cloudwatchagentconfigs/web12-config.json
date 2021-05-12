@@ -1,0 +1,68 @@
+{
+	"logs": {
+		"logs_collected": {
+			"files": {
+				"collect_list": [
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\AccountingDashboard.API\\App_Data\\logs\\log.txt",
+						"log_group_name": "accountingdashboardapi-logs-web12",
+						"log_stream_name": "accountingdashboardapi"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\payrollentry\\App_Data\\logs\\logs.log",
+						"log_group_name": "payrollentryapi-logs-web12",
+						"log_stream_name": "payrollentryapi"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\ExpenseAPI\\App_Data\\logs\\log.txt",
+						"log_group_name": "accountingexpenseapi-logs-web12",
+						"log_stream_name": "accountingexpenseapi"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\api.payrollrelief.com\\integration\\App_Data\\logs\\log.txt",
+						"log_group_name": "payrollapicore-logs-web12",
+						"log_stream_name": "payrollapicore"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\AccountingReports\\App_Data\\logs\\log.txt",
+						"log_group_name": "accountingreports-logs-web12",
+						"log_stream_name": "accountingreports"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\payrollworkerscompinsurance\\App_Data\\logs\\log.txt",
+						"log_group_name": "payrollworkerscompinsurance-logs-web12",
+						"log_stream_name": "payrollworkerscompinsurance"
+					}
+					
+					
+				]
+			},
+			"windows_events": {
+				"collect_list": [
+					{
+						"event_format": "xml",
+						"event_levels": [
+							"VERBOSE",
+							"INFORMATION",
+							"WARNING",
+							"ERROR",
+							"CRITICAL"
+						],
+						"event_name": "Security",
+						"log_group_name": "security-logs-web12",
+						"log_stream_name": "security"
+					}
+				]
+			}
+		}
+	},
+	"metrics": {
+		"metrics_collected": {
+			"statsd": {
+				"metrics_aggregation_interval": 60,
+				"metrics_collection_interval": 60,
+				"service_address": ":8125"
+			}
+		}
+	}
+}

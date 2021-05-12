@@ -1,0 +1,62 @@
+{
+	"logs": {
+		"logs_collected": {
+			"files": {
+				"collect_list": [
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\PayrollProcessingAPI\\App_Data\\logs\\log.txt",
+						"log_group_name": "payrollprocessingapi-logs-web11",
+						"log_stream_name": "payrollprocessingapi"
+					},
+{
+						"file_path": "D:\\inetpub\\wwwroot\\AccountingDashboard.API\\App_Data\\logs\\log.txt",
+						"log_group_name": "accountingdashboardapi-logs-web11",
+						"log_stream_name": "accountingdashboardapi"
+					},
+
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\Payroll-SetupApi\\App_Data\\logs\\log.txt",
+						"log_group_name": "payrollsetupapi-logs-web11",
+						"log_stream_name": "payrollsetupapi"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\Yodlee-api\\App_Data\\logs\\logs.log",
+						"log_group_name": "yodleeapi-logs-web11",
+						"log_stream_name": "yodleeapi"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\FormsEngineApi\\App_Data\\logs\\logs.log",
+						"log_group_name": "formsengineapi-logs-web11",
+						"log_stream_name": "formsengineapi"
+					}
+				]
+			},
+			"windows_events": {
+				"collect_list": [
+					{
+						"event_format": "xml",
+						"event_levels": [
+							"VERBOSE",
+							"INFORMATION",
+							"WARNING",
+							"ERROR",
+							"CRITICAL"
+						],
+						"event_name": "system-logs-web11",
+						"log_group_name": "system-logs-web11",
+						"log_stream_name": "system"
+					}
+				]
+			}
+		}
+	},
+	"metrics": {
+		"metrics_collected": {
+			"statsd": {
+				"metrics_aggregation_interval": 60,
+				"metrics_collection_interval": 60,
+				"service_address": ":8125"
+			}
+		}
+	}
+}

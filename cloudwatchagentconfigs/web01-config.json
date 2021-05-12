@@ -1,0 +1,87 @@
+{
+	"logs": {
+		"logs_collected": {
+			"files": {
+				"collect_list": [
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\Accounting\\App_Data\\logs\\logs.log",
+						"log_group_name": "accounting-logs-web01",
+						"log_stream_name": "accounting"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\CloudCabinet\\App_Data\\logs\\log.txt",
+						"log_group_name": "cloudcabinet-logs-web01",
+						"log_stream_name": "cloudcabinet"
+					},
+                                        {
+						"file_path": "D:\\inetpub\\wwwroot\\CloudCabinet\\Api\\App_Data\\logs\\log.txt",   
+						"log_group_name": "cloudcabinetapi-logs-web01",
+						"log_stream_name": "cloudcabinetapi"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\AOAdmin-Prod\\App_Data\\logs\\logs.log",
+						"log_group_name": "aoadmin-logs-web01",
+						"log_stream_name": "aoadmin"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\AOCommon\\App_Data\\logs\\log.txt",
+						"log_group_name": "aocommon-logs-web01",
+						"log_stream_name": "aocommon"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\Awpurchase-Prod\\App_Data\\logs\\log.txt",
+						"log_group_name": "awpurchase-logs-web01",
+						"log_stream_name": "awpurchase"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\AWAuth\\logs\\*.log",
+						"log_group_name": "awauth-logs-web01",
+						"log_stream_name": "awauth"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\EmailAPI\\App_Data\\logs\\log.txt",
+						"log_group_name": "emailapi-logs-web01",
+						"log_stream_name": "emailapi"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\PracticeRelief\\App_Data\\logs\\log.txt",
+						"log_group_name": "practicerelief-logs-web01",
+						"log_stream_name": "practicerelief"
+					},
+					{
+						"file_path": "D:\\inetpub\\wwwroot\\Login\\App_Data\\logs\\log.txt",
+						"log_group_name": "awlogin-logs-web01",
+						"log_stream_name": "awlogin"
+					}
+				]
+			},
+		"windows_events": {
+				"collect_list": [
+					{
+						"event_format": "xml",
+						"event_levels": [
+							"VERBOSE",
+							"INFORMATION",
+							"WARNING",
+							"ERROR",
+							"CRITICAL"
+						],
+						"event_name": "Security",
+						"log_group_name": "security-logs-web01",
+						"log_stream_name": "security"
+					}
+				]
+			}
+		}
+	},
+
+	"metrics": {
+		"metrics_collected": {
+			"statsd": {
+				"metrics_aggregation_interval": 60,
+				"metrics_collection_interval": 60,
+				"service_address": ":8125"
+			}
+		}
+	}
+}

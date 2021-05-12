@@ -1,0 +1,51 @@
+{
+	"logs": {
+		"logs_collected": {
+			"files": {
+				"collect_list": [
+					{
+						"file_path": "D:\\Webtools\\EmailMngr\\Log\\log.txt",
+						"log_group_name": "emailmanager-logs-web08",
+						"log_stream_name": "emailmanager"
+					},
+					{
+						"file_path": "D:\\Webtools\\ProcessMngr\\Log\\log.txt",
+						"log_group_name": "processmanager-logs-web08",
+						"log_stream_name": "processmanager"
+					},
+					{
+						"file_path": "D:\\Webtools\\ProcessEFT2017\\App_Data\\logs\\log.txt",
+						"log_group_name": "processeft2017-logs-web08",
+						"log_stream_name": "processeft2017"
+					}
+				]
+			},
+			"windows_events": {
+				"collect_list": [
+					{
+						"event_format": "xml",
+						"event_levels": [
+							"VERBOSE",
+							"INFORMATION",
+							"WARNING",
+							"ERROR",
+							"CRITICAL"
+						],
+						"event_name": "Security",
+						"log_group_name": "security-logs-web08",
+						"log_stream_name": "security"
+					}
+				]
+			}
+		}
+	},
+	"metrics": {
+		"metrics_collected": {
+			"statsd": {
+				"metrics_aggregation_interval": 60,
+				"metrics_collection_interval": 60,
+				"service_address": ":8125"
+			}
+		}
+	}
+}
